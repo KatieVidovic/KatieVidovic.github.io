@@ -1,0 +1,141 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-size:16px;
+}
+
+img,
+iframe {
+max-width: 100%;
+height: auto;
+/* so that aspect ratio is kept even if height is declared in markup */
+border: 0;
+/* this stops a border if the image is inside a link*/
+}
+
+/*This is a CSS comment
+Always comment your work to explain what you're doing */
+body {
+font-family: 'Poppins', sans-serif;
+}
+/* 
+background color defaults
+Note that HTML and CSS use american spelling (Color not colour). */
+body {
+      background-color: black;
+     }
+header  {
+      background-color: #2EFEF7;
+        }
+/* Note that if we want a number of different elements to have the same style, we just comma separate them. */
+header, footer {
+                text-align: center;
+               }
+
+/* TYPOGRAPHY*/
+h1{
+   font-size:50px;
+   font-family: 'Open Sans', sans-serif; 
+   color: black; /* black */
+   text-transform: uppercase;
+	text-align: center;
+   }
+h2 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    }
+p  {
+            font-family: 'Open Sans', sans-serif;
+            padding-bottom: 1em;
+            }
+li {
+           font-family: 'Open Sans', sans-serif;
+            padding-bottom: 1em;
+            }
+.item {
+       background-color: #FFFFFF;
+       padding:1%;
+       margin:1%;
+       margin-bottom: 20px;
+       margin-top: 20px;
+       border-radius:10px;
+}
+/* lets bring the width in a little */
+/* check it out - we're responsive without even trying! */
+main {
+/* there's rarely any time you should set an explicit width. Always use max-width whereever possible. */
+     max-width: 1000px;
+/* Change the above to width: 1000px and see what happens with responsive */
+     margin-left: auto;
+     margin-right: auto;
+       }
+
+/* let's talk about nesting */
+.item li {
+          margin-left:25px;
+}
+blockquote {
+text-transform: uppercase;
+font-style: italic;
+}
+
+nav {
+text-align: center;
+}
+nav li {
+display: inline-block;
+}
+/* nav li a, or nav a ?? */
+nav a {
+background: white;
+color: black;
+padding: 5px;
+text-decoration: none;
+border-radius: 5px;
+}
+nav a:hover {
+background: #89D9FD;
+}
+body {
+background-color: black;
+background-image: url(BG.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Media query - responsive */
+@media screen and (min-width: 500px) {
+body {
+background-colour: black;
+font-family: arial;
+}
+.item {
+background-color: rgba(246,246,246,0.90);
+}
+h2{
+font-family: 'Poppins', sans-serif; }
+}
+
+@media screen and (min-width: 768px){ 
+body {
+background-color: black; 
+background-image: url(BG.jpg); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+.item {
+
+background-color: 102,102,204,0.9; 
+}
+        footer {
+        color: white;
+        clear: both;
+	}}
+.center {
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
